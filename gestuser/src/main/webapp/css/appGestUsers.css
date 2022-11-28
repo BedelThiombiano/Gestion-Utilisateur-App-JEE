@@ -1,0 +1,183 @@
+body
+{
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+#menu, #header, #body, #footer
+{
+	width: 100%;
+	margin: 0px;
+}
+#menu li a, #header, #menu, #footer 
+{
+	color: white;
+	background-color: Grey;
+	text-align: center;
+}
+
+#menu
+{
+	position: absolute;
+	border-top: solid 2px white;
+	border-bottom: solid 1px white;
+	height: 7%;
+	top: 10%;
+	
+
+}
+#menu ul
+{
+	padding: 0px;
+	height: 100%;
+	margin: 0px;
+}
+#menu li
+{
+
+	padding: 10px;
+	display: inline-block;
+	border-left: solid 1px white;
+	height: 100%;
+}
+#menu li:last-child
+{
+	border-right: solid 1px white;
+}
+#menu li a
+{
+	
+	font-size: 2.5ex;
+	text-decoration: none;
+	font-family:"Arial";
+}
+#body
+{
+	position: absolute;
+	height: 75%;
+	left: 0px;
+	top: 17%;
+	padding: 0px 0px;
+	overflow: auto;
+}
+
+#header
+{
+	
+	height: 11%;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-family: "Arial";
+	position: absolute;
+	padding: 10px;
+}
+
+#footer
+{
+	padding-top: 2px;
+	position: absolute;
+	height: 10%;
+	top: 95%;
+}
+#titre
+{
+	text-align: center;
+	font-family: "Arial";
+}
+
+td a {
+	display : inline-block;
+	font-size: 2.6ex;
+	text-decoration: none;
+	border: black 2px;
+	border-radius: 5px;
+	background-color: grey;
+	color: white;
+	padding: 5px;
+}
+
+th,td,table
+{
+	padding: 8px;
+	border: solid 1px;
+	
+}
+tr:first-child
+{
+	color: white;
+	background-color: grey;
+	border: solid 1px grey;
+}
+table
+{
+	border-collapse: collapse;
+	margin: auto;
+	width: fit-content;
+	
+	
+}
+
+
+.succes
+{
+	color: white;
+	text-align: center;
+	background-color:green;
+	font-family: "Arial";
+}
+
+.error{
+	color: white;
+	text-align: center;
+	background-color:red;
+	font-family: "Arial";
+}
+
+.errorMessage{
+	color: red;
+	text-align: center;
+}
+
+
+form
+{
+	padding: 5px;
+	width: 50%;
+	margin: auto;
+	border-radius: 20px;
+	border: outset 2px grey;
+}
+.formItem
+{
+	text-align: center;
+}
+.formItem input
+{
+	height: 25px;
+	border-radius: 5px;
+	border-color: grey;
+	padding: 2px;
+	
+}
+.formItem label
+{
+	margin: 15px;
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	font-size: 1.2em;
+}
+
+.formItem input[type="submit"]
+{
+	margin-top: 10px;
+	color: white;
+	background-color: grey;
+	border: double 3px grey;	
+	width: 100px;
+	display: inline-block;
+	height: 30px;
+	/*margin-left: 20px;*/
+	border-radius: 10px;
+	font-family: "arial";
+}
