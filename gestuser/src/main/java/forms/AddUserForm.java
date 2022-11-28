@@ -48,11 +48,6 @@ public class AddUserForm
 		this.validerPasswords();
 		
 		if(this.erreurs.isEmpty()) {
-			/*
-			UtilisateurDao.ajouter(utilisateur);
-			this.status = true;
-			this.statusMessage = SUCCES_AJOUT_MESSAGE;
-			*/
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gestusers" ,"root","");

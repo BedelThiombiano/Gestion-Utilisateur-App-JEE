@@ -54,16 +54,6 @@ public class Ajouter extends HttpServlet {
 		
 		getServletContext().getRequestDispatcher(VUE_AJOUT_USER).forward(request, response);
 		
-		/*
-		String nom = request.getParameter("nom");
-		String prenom = request.getParameter("prenom");
-		String password = request.getParameter("password");
-		String login = request.getParameter("login");
-		Utilisateur utilisateur = new Utilisateur(nom, prenom, login, password);
-		//UtilisateurDao utilisateurs = new UtilisateurDao();
-		UtilisateurDao.ajouter(utilisateur);
-		response.sendRedirect("list");
-		*/
 	}
 
 }

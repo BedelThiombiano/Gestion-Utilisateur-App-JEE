@@ -29,20 +29,11 @@ public class Delete extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		DeleteUserForm form = new DeleteUserForm(request);
 		form.supprimer();
 		response.sendRedirect("list");
 		
-		//String id =request.getParameter("id");
-		/*
-		 * if(id !=null && id.matches("[0-9]+")) { Utilisateur utilisateur =
-		 * UtilisateurDao.get(Integer.parseInt(id)); if(utilisateur != null) {
-		 * UtilisateurDao.supprimer(Integer.parseInt(id)); }
-		 * response.sendRedirect("list");}
-		 */
 	}
 
 	/**

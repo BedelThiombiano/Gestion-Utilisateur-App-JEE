@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import beans.Utilisateur;
 import forms.ListUserForm;
 
-//import dao.UtilisateurDao;
 
 /**
  * Servlet implementation class ListUser
@@ -36,7 +35,6 @@ public class ListUser extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(VUE_LIST_UTILISATEUR);
 		ArrayList<Utilisateur> utilisateurs = ListUserForm.lister();
-		//setAttribute(utilisateurs);
 		request.setAttribute("utilisateurs",utilisateurs);
 		dispatcher.forward(request, response);
 	}

@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import forms.AuthentificationForm;
 
-//import beans.Utilisateur;
 
 /**
  * Servlet implementation class Login
@@ -49,12 +48,6 @@ public class Login extends HttpServlet {
 			break;
 
 		}
-		/*
-		 * RequestDispatcher dispatcher =
-		 * getServletContext().getRequestDispatcher(VUE_LOGIN);
-		 * dispatcher.forward(request, response);
-		 */
-		// response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -63,25 +56,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// RequestDispatcher dispatcher =
-		// getServletContext().getRequestDispatcher(VUE_LIST);
-		/*
-		 * String nameUser = (String)request.getParameter("nameUser"); String passUser =
-		 * (String)request.getParameter("passe"); if ("passe".equals(passUser) &&
-		 * "admin".equals(nameUser)) { request.getSession().setAttribute("utilisateur",
-		 * new Utilisateur(1,"THIOMBIANO","Bedel",nameUser,passUser));
-		 * dispatcher.forward(request, response);
-		 * 
-		 * request.getSession().setAttribute("isConnected", true);
-		 * 
-		 * response.sendRedirect("list"); } else { RequestDispatcher dispatcher =
-		 * getServletContext().getRequestDispatcher(VUE_LIST);
-		 * request.setAttribute("connexionFailed", true); request.setAttribute("login",
-		 * nameUser); dispatcher = getServletContext().getRequestDispatcher(VUE_LOGIN);
-		 * dispatcher.forward(request, response);
-		 * 
-		 * }
-		 */
+
 
 		AuthentificationForm form = new AuthentificationForm();
 		boolean connexionFailed = form.connexion(request);

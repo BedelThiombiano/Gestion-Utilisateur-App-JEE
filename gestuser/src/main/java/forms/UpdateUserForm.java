@@ -47,17 +47,11 @@ public class UpdateUserForm {
 		String prenom = this.getParameter(CHAMP_PRENOM);
 		String login = this.getParameter(CHAMP_LOGIN);
 		String password = this.getParameter(CHAMP_PASSWORD);
-		//String passwordBis = this.getParameter(CHAMP_PASSWORD_BIS);
 		
 		this.utilisateur = new Utilisateur(id, nom, prenom, login, password);
 		this.validerChamps(CHAMP_NOM, CHAMP_PRENOM, CHAMP_LOGIN,CHAMP_PASSWORD);
 		
 		if(this.erreurs.isEmpty()) {
-			/*
-			UtilisateurDao.ajouter(utilisateur);
-			this.status = true;
-			this.statusMessage = SUCCES_AJOUT_MESSAGE;
-			*/
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gestusers" ,"root","");

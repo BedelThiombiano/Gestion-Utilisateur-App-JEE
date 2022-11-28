@@ -11,8 +11,6 @@ import java.util.ArrayList;
 import beans.Utilisateur;
 
 public class ListUserForm {
-
-	//private static ArrayList<Utilisateur> utilisateurs = new ArrayList<Utilisateur>();
 	
 	public static ArrayList<Utilisateur> lister(){
 		ArrayList<Utilisateur> utilisateurs = new ArrayList<Utilisateur>();
